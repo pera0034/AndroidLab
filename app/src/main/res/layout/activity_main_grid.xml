@@ -32,7 +32,7 @@
         <androidx.gridlayout.widget.GridLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:columnCount="2">
+            android:layout_columnSpan="2">
 
             <Button
                 android:id="@+id/button9"
@@ -51,7 +51,7 @@
         <androidx.gridlayout.widget.GridLayout
             android:layout_width="match_parent"
             android:layout_height="60dp"
-            app:columnCount="2">
+            android:layout_columnSpan="2">
 
             <ImageButton
                 android:id="@+id/imageButton2"
