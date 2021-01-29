@@ -54,9 +54,9 @@
 
         <ImageButton
             android:id="@+id/imageButton"
+            android:src="@drawable/flag"
             android:layout_width="190dp"
             android:layout_height="wrap_content"
-            app:srcCompat="@drawable/flag"
             tools:layout_editor_absoluteX="93dp"
             tools:layout_editor_absoluteY="203dp" />
 
