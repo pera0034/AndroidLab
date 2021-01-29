@@ -81,7 +81,7 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:inputType="textPersonName|textCapWords"
-            android:text="Type here"
+            android:hint="Type Here"
             tools:layout_editor_absoluteX="44dp"
             tools:layout_editor_absoluteY="318dp" />
 
