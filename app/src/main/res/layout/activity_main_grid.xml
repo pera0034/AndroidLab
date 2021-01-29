@@ -13,7 +13,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="49dp">
+        tools:layout_editor_absoluteY="49dp"
+        tools:ignore="MissingConstraints">
 
         <androidx.gridlayout.widget.GridLayout
             android:layout_width="match_parent"

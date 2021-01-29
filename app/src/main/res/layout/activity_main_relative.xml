@@ -17,7 +17,6 @@
             android:layout_height="wrap_content"
             android:text="Look at my GUI"
             android:textSize="50dp" />
-
     </RelativeLayout>
 
     <RelativeLayout
@@ -25,7 +24,6 @@
         android:layout_width="match_parent"
         android:layout_height="75dp"
         android:layout_below="@id/relative1">
-
 
         <Button
             android:id="@+id/button3"

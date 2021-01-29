@@ -12,7 +12,7 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal" >
 
-            <TextView
+        <TextView
                 android:id="@+id/textView"
                 android:layout_width="362dp"
                 android:layout_height="wrap_content"
