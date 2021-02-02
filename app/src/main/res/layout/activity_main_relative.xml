@@ -37,7 +37,6 @@
             android:layout_height="wrap_content"
             android:layout_toEndOf="@id/button3"
             android:text="CheckBox" />
-
     </RelativeLayout>
 
     <RelativeLayout
