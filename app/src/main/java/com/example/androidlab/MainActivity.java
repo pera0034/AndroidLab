@@ -16,7 +16,9 @@ public class MainActivity extends AppCompatActivity {
         getResources().getString(R.string.toast_message);
 
         CheckBox box = (CheckBox)findViewById(R.id.checkbox);
-        box.onCheckChangeListener((CompoundButton cb, boolean b) -> {
+
+        box.setOnCheckedChangeListener((CompoundButton cb, boolean b) -> {
+            /*Snackbar.setAction is having an error.*/
             Snackbar snackbar = Snackbar.setAction("Undo", click ->cb.setChecked(b));
         });
     }
