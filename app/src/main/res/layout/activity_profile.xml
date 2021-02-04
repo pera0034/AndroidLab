@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/profile1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Your Profile:"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textProfile"
+            android:text="Your Name:"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/text1EmailAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView1"
+            android:hint="Enter you name"
+            android:inputType="textEmailAddress"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/textEmailLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text1EmailAddress"
+            android:text="You email:"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/textEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textEmailLabel"
+            android:layout_marginTop="6dp"
+            android:hint="Enter your email"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/textYourEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textEmail"
+            android:text="You picture:"
+            android:textSize="20dp" />
+
+        <ImageButton
+            android:id="@+id/imageButton4"
+            android:layout_width="409dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textYourEmail"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="0dp"
+            android:src="@android:drawable/picture_frame" />
+
+        <TextView
+            android:id="@+id/clickHint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imageButton4"
+            android:text="Click the button about to take a picture:"
+            android:textSize="20dp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
