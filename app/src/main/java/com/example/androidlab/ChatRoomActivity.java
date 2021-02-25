@@ -1,5 +1,6 @@
 package com.example.androidlab;
 
+import android.app.AlertDialog;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -46,6 +47,26 @@ public class ChatRoomActivity extends AppCompatActivity {
             messageListAdapter.notifyDataSetChanged();
             text.setText("");
         });
+
+        // Set long click listener for each item in the row.
+        messageList.setOnItemLongClickListener(((parent, view, position, id) -> {
+            AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(this);
+            alertDialogBuilder.
+                    setTitle(getString(R.string.delete))
+                    .setMessage(
+                            getString(R.string.row) + position + "\n" +
+                                    getString(R.string.database) + messageListAdapter.getItemId(position)
+                    )
+                    .setPositiveButton(getString(R.string.yes), (click, arg) -> {
+                        messages.remove(position);
+                        messageListAdapter.notifyDataSetChanged();
+                    })
+                    .setNegativeButton(R.string.no, (click, arg) -> {
+                    })
+                    .show();
+
+            return false;
+        }));
     }
 
     private class MessageListAdapter extends BaseAdapter {
