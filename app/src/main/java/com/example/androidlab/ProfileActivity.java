@@ -1,7 +1,5 @@
 package com.example.androidlab;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.graphics.Bitmap;
@@ -10,7 +8,8 @@ import android.provider.MediaStore;
 import android.util.Log;
 import android.widget.Button;
 import android.widget.ImageButton;
-import android.widget.ImageView;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class ProfileActivity extends AppCompatActivity {
     ImageButton mImageButton;
@@ -21,14 +20,9 @@ public class ProfileActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_profile);
 
-        /*Intent dataSent = getIntent();
-        String nameSent = dataSent.getStringExtra("email");
-
-        Button previousButton = findViewById(R.id.login);
-        previousButton.setOnClickListener(click -> {
-            setResult(1 ,dataSent);
-            finish();
-        });*/
+        Intent messagePage = new Intent(this, ChatRoomActivity.class);
+        Button message = findViewById(R.id.button4);
+        message.setOnClickListener(click -> startActivity( messagePage ));
 
         ImageButton imgButton = (ImageButton) findViewById(R.id.imageButton);
         Log.e("onCreate", "Activity: onCreate()");
