@@ -84,6 +84,14 @@
             android:layout_marginTop="93dp"
             android:text="Go to chat" />
 
+        <Button
+            android:id="@+id/buttonWeather"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/clickHint"
+            android:layout_marginTop="150dp"
+            android:text="Go to Weather Page" />
+
     </RelativeLayout>
 
 </RelativeLayout>

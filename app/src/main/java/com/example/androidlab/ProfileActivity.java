@@ -20,12 +20,17 @@ public class ProfileActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_profile);
 
-        Intent messagePage = new Intent(this, ChatRoomActivity.class);
+
+        /*Intent messagePage = new Intent(this, ChatRoomActivity.class);
         Button message = findViewById(R.id.button4);
         message.setOnClickListener(click -> startActivity( messagePage ));
 
         ImageButton imgButton = (ImageButton) findViewById(R.id.imageButton);
-        Log.e("onCreate", "Activity: onCreate()");
+        Log.e("onCreate", "Activity: onCreate()");*/
+
+        Intent weatherPage = new Intent(this, WeatherForecast.class);
+        Button weather = findViewById(R.id.buttonWeather);
+        weather.setOnClickListener(click -> startActivity( weatherPage ));
     }
 
     @SuppressLint("QueryPermissionsNeeded")
