@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WeatherForecast">
+
+    <RelativeLayout
+        android:id="@+id/weatherForecast"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="25dp"
+            tools:layout_editor_absoluteX="48dp"
+            tools:layout_editor_absoluteY="280dp"/>
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="315dp"
+            android:layout_height="205dp"
+            app:srcCompat="@android:drawable/divider_horizontal_dark"
+            tools:layout_editor_absoluteX="48dp"
+            tools:layout_editor_absoluteY="45dp"
+            android:layout_below="@id/city" />
+
+        <TextView
+            android:id="@+id/currentTemp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Current Temperature"
+            tools:layout_editor_absoluteX="48dp"
+            tools:layout_editor_absoluteY="280dp"
+            android:layout_below="@id/imageView"/>
+
+        <TextView
+            android:id="@+id/minTemp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Min Temperature"
+            tools:layout_editor_absoluteX="48dp"
+            tools:layout_editor_absoluteY="320dp"
+            android:layout_below="@id/currentTemp" />
+
+        <TextView
+            android:id="@+id/maxTemp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Max Temperature"
+            tools:layout_editor_absoluteX="48dp"
+            tools:layout_editor_absoluteY="356dp"
+            android:layout_below="@id/minTemp" />
+
+        <TextView
+            android:id="@+id/uvRating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="UV Rating"
+            tools:layout_editor_absoluteX="50dp"
+            tools:layout_editor_absoluteY="392dp"
+            android:layout_below="@id/maxTemp" />
+
+        <ProgressBar
+            android:id="@+id/myprogressbar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="303dp"
+            android:layout_height="18dp"
+            tools:layout_editor_absoluteX="49dp"
+            tools:layout_editor_absoluteY="439dp"
+            android:layout_below="@id/uvRating" />
+    </RelativeLayout>
+</RelativeLayout>
