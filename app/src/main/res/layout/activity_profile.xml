@@ -3,7 +3,11 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:layout_marginTop="27dp"
+    android:layout_marginBottom="27dp"
+    android:layout_marginLeft="48dp"
+    android:layout_marginRight="48dp">
 
     <RelativeLayout
         android:id="@+id/profile1"
@@ -49,7 +53,11 @@
             android:layout_below="@id/textEmailLabel"
             android:layout_marginTop="6dp"
             android:hint="Enter your email"
-            android:textSize="20dp" />
+            android:textSize="20dp"
+            android:nextFocusDown="@id/item1"
+            android:nextFocusUp="@id/item2"
+            android:nextFocusRight="@id/item3"
+            android:nextFocusLeft="@id/item4" />
 
         <TextView
             android:id="@+id/textYourEmail"
@@ -82,7 +90,11 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/clickHint"
             android:layout_marginTop="93dp"
-            android:text="Go to chat" />
+            android:text="Go to chat"
+            android:nextFocusDown="@id/item1"
+            android:nextFocusUp="@id/item2"
+            android:nextFocusRight="@id/item3"
+            android:nextFocusLeft="@id/item4" />
 
         <Button
             android:id="@+id/buttonWeather"
@@ -90,7 +102,11 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/clickHint"
             android:layout_marginTop="150dp"
-            android:text="Go to Weather Page" />
+            android:text="Go to Weather Page"
+            android:nextFocusDown="@id/item1"
+            android:nextFocusUp="@id/item2"
+            android:nextFocusRight="@id/item3"
+            android:nextFocusLeft="@id/item4" />
 
     </RelativeLayout>
 

@@ -15,6 +15,7 @@
         app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="49dp"
         tools:ignore="MissingConstraints">
+
         <androidx.gridlayout.widget.GridLayout
             android:layout_width="match_parent"
             android:layout_height="57dp"
@@ -52,11 +53,6 @@
             android:layout_height="60dp"
             android:layout_columnSpan="2">
 
-            <ImageButton
-                android:id="@+id/imageButton2"
-                android:layout_width="166dp"
-                android:layout_height="match_parent"
-                android:src="@drawable/flag" />
 
             <Switch
                 android:id="@+id/switch3"
