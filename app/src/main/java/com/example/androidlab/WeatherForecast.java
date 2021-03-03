@@ -134,10 +134,6 @@ public class WeatherForecast extends AppCompatActivity {
             return w;
         }
 
-        protected void onPostExecute(String result) {
-            progress.setVisibility(View.GONE);
-        }
-
         protected void onProgressUpdate(Integer... values) {
             progress.setProgress(values[0]);
         }
@@ -151,6 +147,7 @@ public class WeatherForecast extends AppCompatActivity {
             maxTemp.setText("Max Temp: " +fromDoInBackground.max + " " +fromDoInBackground.unit);
             uvRating.setText("UV Rating: " +fromDoInBackground.uv);
             currentCity.setText("" +fromDoInBackground.city);
+            progress.setVisibility(View.GONE);
         }
 
         public double loadJSON(){
