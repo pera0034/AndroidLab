@@ -5,7 +5,11 @@
     android:layout_width="match_parent"
     android:orientation="vertical"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:layout_marginTop="27dp"
+    android:layout_marginBottom="27dp"
+    android:layout_marginLeft="48dp"
+    android:layout_marginRight="48dp">
 
     <LinearLayout
         android:layout_width="fill_parent"
@@ -49,6 +53,21 @@
         android:gravity="fill"
         android:layout_height="wrap_content"
         android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            tools:layout_editor_absoluteX="93dp"
+            tools:layout_editor_absoluteY="203dp" />
+
+        <Switch
+            android:id="@+id/switch1"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:text="Switch on / off"
+            tools:layout_editor_absoluteX="222dp"
+            tools:layout_editor_absoluteY="187dp" />
     </LinearLayout>
 
     <LinearLayout

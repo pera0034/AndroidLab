@@ -3,7 +3,11 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:layout_marginTop="27dp"
+    android:layout_marginBottom="27dp"
+    android:layout_marginLeft="48dp"
+    android:layout_marginRight="48dp">
 
 
     <RelativeLayout
@@ -25,7 +29,12 @@
             android:layout_below="@id/textView1"
             android:hint="Type email here"
             android:inputType="textEmailAddress"
-            android:textSize="20dp" />
+            android:textSize="20dp"
+            android:nextFocusDown="@id/item1"
+            android:nextFocusUp="@id/item2"
+            android:nextFocusRight="@id/item3"
+            android:nextFocusLeft="@id/item4"
+            />
 
         <TextView
             android:id="@+id/textEmailLabel"
@@ -41,14 +50,22 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/textEmailLabel"
             android:layout_marginTop="6dp"
-            android:inputType="textPassword" />
+            android:inputType="textPassword"
+            android:nextFocusDown="@id/item1"
+            android:nextFocusUp="@id/item2"
+            android:nextFocusRight="@id/item3"
+            android:nextFocusLeft="@id/item4" />
 
         <Button
             android:id="@+id/login"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/textEmail"
-            android:text="LOGIN" />
+            android:text="LOGIN"
+            android:nextFocusDown="@id/item1"
+            android:nextFocusUp="@id/item2"
+            android:nextFocusRight="@id/item3"
+            android:nextFocusLeft="@id/item4"/>
 
 
     </RelativeLayout>
