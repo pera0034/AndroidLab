@@ -68,7 +68,7 @@
         android:id="@+id/relative4"
         android:layout_width="match_parent"
         android:layout_height="75dp"
-        android:layout_below="@id/relative3">
+        android:layout_below="@id/relative2">
 
 
         <EditText

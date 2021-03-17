@@ -16,7 +16,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidLab">
-        <activity android:name=".WeatherForecast"></activity>
+        <activity android:name=".MenuDrawer" />
+        <activity android:name=".TestToolbar" />
+        <activity android:name=".WeatherForecast" />
         <activity
             android:name=".MainActivity2"
             android:label="@string/title_activity_main2"

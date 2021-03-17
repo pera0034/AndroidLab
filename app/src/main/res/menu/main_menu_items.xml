@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/menu1"
+          android:icon="@drawable/iconshamburger"
+          android:title="Main"
+          app:showAsAction="ifRoom" />
+
+    <item android:id="@+id/menu2"
+        android:title="Main"
+        app:showAsAction="never">
+
+            <item android:id="@+id/choice1"
+                android:title="Choice 1"
+                app:showAsAction="never"/>
+
+            <item android:id="@+id/choice2"
+                android:title="Choice 2"
+                app:showAsAction="never"/>
+
+            <item android:id="@+id/choice3"
+                android:title="Choice 3"
+                app:showAsAction="never"/>
+    </item>
+</menu>
