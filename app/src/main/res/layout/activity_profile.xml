@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start">
 
     <RelativeLayout
         android:id="@+id/profile1"
@@ -88,10 +91,17 @@
             android:id="@+id/buttonWeather"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/clickHint"
-            android:layout_marginTop="150dp"
+            android:layout_below="@id/button4"
+            android:layout_marginTop="20dp"
             android:text="Go to Weather Page" />
 
-    </RelativeLayout>
+        <Button
+            android:id="@+id/buttonToolbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/buttonWeather"
+            android:layout_marginTop="20dp"
+            android:text="Go To Toolbar Page" />
 
-</RelativeLayout>
+    </RelativeLayout>
+</androidx.drawerlayout.widget.DrawerLayout>

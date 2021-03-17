@@ -40,32 +40,10 @@
     </RelativeLayout>
 
     <RelativeLayout
-        android:id="@+id/relative3"
-        android:layout_width="match_parent"
-        android:layout_height="75dp"
-        android:layout_below="@id/relative2">
-
-        <ImageButton
-            android:id="@+id/imageButton3"
-            android:layout_width="200dp"
-            android:layout_height="wrap_content"
-            android:src="@drawable/flag" />
-
-        <Switch
-            android:id="@+id/checkBox3"
-            android:layout_width="200dp"
-            android:layout_height="wrap_content"
-            android:layout_toEndOf="@id/imageButton3"
-            android:text="CheckBox" />
-
-    </RelativeLayout>
-
-
-    <RelativeLayout
         android:id="@+id/relative4"
         android:layout_width="match_parent"
         android:layout_height="75dp"
-        android:layout_below="@id/relative3">
+        android:layout_below="@id/relative2">
 
 
         <EditText

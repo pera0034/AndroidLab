@@ -34,6 +34,45 @@
         android:layout_height="wrap_content"
         android:layout_above="@id/textChatBox"
         android:layout_alignParentTop="true">
+
     </ListView>
 
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="94dp">
+
+        <RelativeLayout
+            android:id="@+id/profile1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/messageHere"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Message Here"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/messageID"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="ID="
+                android:textSize="15dp"
+                android:layout_below="@id/messageHere" />
+
+            <CheckBox
+                android:id="@+id/checkedMessage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Is a Send Message"
+                android:layout_below="@id/messageID"  />
+
+        </RelativeLayout>
+
+
+    </FrameLayout>
 </RelativeLayout>

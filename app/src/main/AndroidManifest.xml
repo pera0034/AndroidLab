@@ -2,7 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.androidlab">
 
-    <uses-permission android:name="android.permission.INTERNET" />  
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <uses-feature
         android:name="android.hardware.camera"
         android:required="true" />
@@ -14,7 +15,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidLab">
-        <activity android:name=".WeatherForecast"></activity>
+        <activity android:name=".MenuDrawer" />
+        <activity android:name=".TestToolbar" />
+        <activity android:name=".WeatherForecast" />
         <activity
             android:name=".MainActivity2"
             android:label="@string/title_activity_main2"
